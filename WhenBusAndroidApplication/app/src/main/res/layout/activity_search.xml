@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="270dp"
+        android:layout_height="100dp"
+        android:id="@+id/Image_Title"
+        android:layout_gravity="center"
+        android:src="@drawable/icon_searchtitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/Image_Title"
+        android:id="@+id/relativeLayout1">
+        <TextView
+            android:text="버스번호"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Txt_RadioTitle_1"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textIsSelectable="false"
+            android:textStyle="bold" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Txt_RadioTitle_1"
+            android:id="@+id/RadioGroup_BusNumber"
+            android:layout_centerHorizontal="true">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5500-1번"
+                android:id="@+id/RadioButton_BusNumber1" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1112번"
+                android:id="@+id/RadioButton_BusNumber2" />
+                <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5100번"
+                android:id="@+id/RadioButton_BusNumber3" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M5107번"
+                android:id="@+id/RadioButton_BusNumber4" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9번"
+                android:id="@+id/RadioButton_BusNumber5" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/relativeLayout2"
+        android:layout_below="@+id/Image_Title"
+        android:layout_toRightOf="@+id/Button_Enter"
+        android:layout_toEndOf="@+id/Button_Enter">
+        <TextView
+            android:text="시간"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Txt_RadioTitle_2"
+            android:layout_marginTop="20dp"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textIsSelectable="false"
+            android:textStyle="bold" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/RadioGroup_Time"
+            android:layout_below="@+id/Txt_RadioTitle_2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="04~08시"
+                android:id="@+id/RadioButton_Time1" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="08~12시"
+                android:id="@+id/RadioButton_Time2" />
+            <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12~16시"
+            android:id="@+id/RadioButton_Time3"/>
+            <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="16~20시"
+                    android:id="@+id/RadioButton_Time4" />
+            <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20~24시"
+            android:id="@+id/RadioButton_Time5" />
+            <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24~25시"
+                    android:id="@+id/RadioButton_Time6" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/relativeLayout2"
+        android:id="@+id/relativeLayout3">
+        <TextView
+            android:text="요일"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Txt_RadioTitle_3"
+            android:layout_marginTop="0dp"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textIsSelectable="false"
+            android:textStyle="bold" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/Txt_RadioTitle_3"
+            android:id="@+id/RadioGroup_Day">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="주중"
+                android:id="@+id/RadioButton_Day1" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="주말"
+                android:id="@+id/RadioButton_Day2" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:onClick="onBtnClicked_Search_Enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  조 회  "
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/Button_Enter"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

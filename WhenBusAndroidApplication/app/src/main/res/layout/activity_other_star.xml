@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="270dp"
+        android:layout_height="100dp"
+        android:id="@+id/Image_Title"
+        android:layout_gravity="center"
+        android:src="@drawable/icon_otherstartitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/Table_star"
+        android:orientation="vertical"
+        android:layout_below="@+id/Image_Title"
+        android:layout_centerHorizontal="true">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#03A9F4"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="순 위"
+                android:textColor="#000000"
+                android:textSize="10pt" />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="기 사"
+                android:textColor="#000000"
+                android:textSize="10pt" />
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="기사 번호"
+                android:textColor="#000000"
+                android:textSize="10pt" />
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="평 점"
+                android:textColor="#000000"
+                android:textSize="10pt" />
+        </TableRow>
+
+        <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#000000"
+                android:textSize="10pt" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/text_other_1_name"
+                android:text="기사1"
+                android:textColor="#000000"
+                android:textSize="10pt" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/text_other_1_number"
+                android:text="기사번호1"
+                android:textColor="#000000"
+                android:textSize="10pt" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/text_other_1_grade"
+                android:text="평점1"
+                android:textColor="#000000"
+                android:textSize="10pt" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="#000000"
+                android:textSize="10pt" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/text_other_2_name"
+                android:text="기사2"
+                android:textColor="#000000"
+                android:textSize="10pt" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/text_other_2_number"
+                android:text="기사번호2"
+                android:textColor="#000000"
+                android:textSize="10pt" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/text_other_2_grade"
+                android:text="평점2"
+                android:textColor="#000000"
+                android:textSize="10pt" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="#000000"
+                android:textSize="10pt" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/text_other_3_name"
+                android:text="기사3"
+                android:textColor="#000000"
+                android:textSize="10pt" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/text_other_3_number"
+                android:text="기사번호3"
+                android:textColor="#000000"
+                android:textSize="10pt" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/text_other_3_grade"
+                android:text="평점3"
+                android:textColor="#000000"
+                android:textSize="10pt" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="#000000"
+                android:textSize="10pt" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/text_other_4_name"
+                android:text="기사4"
+                android:textColor="#000000"
+                android:textSize="10pt" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/text_other_4_number"
+                android:text="기사번호4"
+                android:textColor="#000000"
+                android:textSize="10pt" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/text_other_4_grade"
+                android:text="평점4"
+                android:textColor="#000000"
+                android:textSize="10pt" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="#000000"
+                android:textSize="10pt" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/text_other_5_name"
+                android:text="기사5"
+                android:textColor="#000000"
+                android:textSize="10pt" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/text_other_5_number"
+                android:text="기사번호5"
+                android:textColor="#000000"
+                android:textSize="10pt" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/text_other_5_grade"
+                android:text="평점5"
+                android:textColor="#000000"
+                android:textSize="10pt" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="평균평점"
+                android:background="#03A9F4"
+                android:textColor="#000000"
+                android:textSize="10pt" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/text_other_avg"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="10pt" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/linearLayout_other_star_1"
+        android:layout_below="@+id/Table_star">
+
+        <TextView
+            android:text="  기사 이름  : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Txt_Name"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="기사 이름을 쓰시오"
+            android:id="@+id/EditTxt_Name"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout_other_star_2"
+        android:layout_below="@+id/linearLayout_other_star_1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="  기사 번호  : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Txt_Number"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:hint="기사 번호을 쓰시오"
+            android:id="@+id/EditTxt_Number"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout_other_star_3"
+        android:layout_below="@+id/linearLayout_other_star_2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="         평 점  : "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Txt_Grade"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+
+        <Spinner
+            android:id="@+id/Spinner_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:prompt="@string/grade_prompt"
+            />
+    </LinearLayout>
+
+    <Button
+        android:onClick="onBtnClicked_Other_Star_Enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  확 인  "
+        android:textSize="20sp"
+        android:id="@+id/Button_Enter"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/linearLayout_other_star_3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp" />
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+
+create Table Notice
+(
+NoticeID int(1) unsigned not null auto_increment,
+NoticeName char(50) not null,
+Contents char(254) not null,
+UpdatedDate DateTime not null default NOW(),
+CreatedDate DateTime not null default NOW(),
+constraint NoticePK1 primary key(NoticeID)
+);
+
+create Table Bus
+(
+BusName char(8) not null ,
+IsCrossRoad char(1) not null default 'T',
+NaverMapURL char(100) not null default 'http://m.map.naver.com/bus/station.nhn?stationID=116048',
+constraint BusPK1 primary key(BusName)
+);
+
+create Table Car
+(
+CarPlateName char(12) not null,
+BusName char(8) not null,
+IsExistBackDoor char(1) not null default 'F',
+YearMaked Date not null default '2000.01.01',
+constraint CarPK1 primary key(CarPlateName),
+constraint CarFK1 foreign key(BusName) references Bus(BusName) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+create table Driver
+( 
+DriverID int(1) unsigned not null auto_increment, 
+Name char(10) not null,
+Age int(1) unsigned not null,
+Gender char(1) not null default '³²',
+VoteAllValue int(1) unsigned not null default '0' ,
+VoteCount int(1) unsigned not null default '0',
+constraint DriverPK1 primary key(DriverID)
+);
+
+create Table Schedule
+(
+IsWeekend char(1) not null default 'F',
+StartTime time(1) not null  default '05:00',
+CarPlateName char(12) not null ,
+DriverID int(1) unsigned not null,
+constraint SchedulePK primary key(IsWeekend,StartTime,CarPlateName,DriverID),
+constraint ScheduleFK1 foreign key(CarPlateName) references Car(CarPlateName) ON UPDATE CASCADE ON DELETE CASCADE,
+constraint ScheduleFK2 foreign key(DriverID) references Driver(DriverID) ON UPDATE CASCADE ON DELETE CASCADE
+);
